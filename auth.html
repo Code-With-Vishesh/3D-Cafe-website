@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Brew &amp; Bean</title>
+  <meta name="description" content="Sign in or create your Brew & Bean account.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page">
+  <main class="auth-layout">
+    <aside class="auth-brand-panel">
+      <div class="auth-brand-overlay"></div>
+      <div class="auth-brand-content">
+        <a href="index.html" class="auth-logo" aria-label="Back to Brew and Bean home">
+          <span class="auth-logo-mark"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 20h25v10a9 9 0 0 1-9 9h-7a9 9 0 0 1-9-9V20Z"/><path d="M33 23h3a6 6 0 0 1 0 12h-3M14 15c-2-4 4-5 1-10M23 15c-2-4 4-5 1-10" stroke-linecap="round"/><path d="M5 43h31"/></svg></span>
+          <span><strong>Brew &amp; Bean</strong><small>Crafted with Passion. Served with Love.</small></span>
+        </a>
+        <div class="auth-brand-copy"><span class="auth-kicker">Brew &amp; Bean Community</span><h1>Welcome to the<br><em>Brew &amp; Bean</em><br>coffee community.</h1><p>Sign in to continue your coffee journey and enjoy exclusive offers, faster checkout and more.</p></div>
+        <div class="auth-benefits"><div><span class="benefit-icon">✦</span><p><b>Exclusive Rewards</b><small>Earn points on every order and unlock exciting perks.</small></p></div><div><span class="benefit-icon">▣</span><p><b>Faster Checkout</b><small>Save your details and enjoy a smooth ordering experience.</small></p></div><div><span class="benefit-icon">♡</span><p><b>Personalized For You</b><small>Get recommendations and offers tailored to your taste.</small></p></div></div>
+        <div class="auth-offer"><span>♧</span><p>New here? Create an account and get <b>10% OFF</b><br>on your first order.</p></div>
+      </div>
+    </aside>
+    <section class="auth-main-panel">
+      <header class="auth-topbar"><a href="index.html" class="auth-back">← <span>Back to website</span></a><span class="auth-top-note">Your favorite coffee, your favorite corner.</span></header>
+      <div class="auth-card">
+        <div class="auth-tabs" role="tablist"><button class="auth-tab active" data-mode="login" role="tab" aria-selected="true"><span>♙</span> Login</button><button class="auth-tab" data-mode="signup" role="tab" aria-selected="false"><span>♙</span> Sign Up</button></div>
+        <div class="mobile-auth-switch"><button class="active" data-mode="login">Login</button><button data-mode="signup">Sign Up</button></div>
+        <div id="auth-login" class="auth-form-view active" data-view="login"><div class="auth-heading"><span class="auth-kicker">Welcome back</span><h2>Welcome back!</h2><p>Sign in to continue your Brew &amp; Bean experience.</p></div><form id="login-form" novalidate><label for="login-email">Email Address<div class="auth-input"><span>⌕</span><input id="login-email" type="email" autocomplete="email" placeholder="Enter your email address"><small></small></div></label><label for="login-password">Password<div class="auth-input"><span>⌑</span><input id="login-password" type="password" autocomplete="current-password" placeholder="Enter your password"><button type="button" class="password-toggle" data-target="login-password" aria-label="Show password">◉</button><small></small></div></label><div class="auth-form-options"><label class="remember"><input type="checkbox"> <span>Remember me</span></label><button type="button" class="text-link" id="forgot-open">Forgot password?</button></div><button class="auth-primary" type="submit">Login <span>→</span></button></form><div class="auth-divider"><span>or continue with</span></div><button class="social-btn" type="button" data-social="Google"><b class="google-mark">G</b> Continue with Google</button><p class="auth-switch-copy">Don't have an account? <button type="button" class="text-link" data-mode="signup">Create Account</button></p></div>
+        <div id="auth-signup" class="auth-form-view" data-view="signup"><div class="auth-heading"><span class="auth-kicker">Join our community</span><h2>Create your account</h2><p>Join our coffee community and enjoy a more personalized experience.</p></div><form id="signup-form" novalidate><label for="signup-name">Full Name<div class="auth-input"><span>♙</span><input id="signup-name" type="text" autocomplete="name" placeholder="Enter your full name"><small></small></div></label><label for="signup-email">Email Address<div class="auth-input"><span>⌕</span><input id="signup-email" type="email" autocomplete="email" placeholder="Enter your email address"><small></small></div></label><label for="signup-phone">Phone Number <i>(optional)</i><div class="auth-input"><span>♧</span><input id="signup-phone" type="tel" autocomplete="tel" placeholder="+91 XXXXX XXXXX"><small></small></div></label><label for="signup-password">Create Password<div class="auth-input"><span>⌑</span><input id="signup-password" type="password" autocomplete="new-password" placeholder="Create a password"><button type="button" class="password-toggle" data-target="signup-password" aria-label="Show password">◉</button><small></small></div></label><div id="password-strength" class="password-strength"><span>Password strength</span><div><i></i><i></i><i></i></div><b>Enter a password</b><small>At least 8 characters · one uppercase letter · one number</small></div><label for="signup-confirm">Confirm Password<div class="auth-input"><span>⌑</span><input id="signup-confirm" type="password" autocomplete="new-password" placeholder="Confirm your password"><small></small></div></label><label class="auth-check"><input id="terms-check" type="checkbox"><span>I agree to the <a href="#terms">Terms &amp; Conditions</a></span><small></small></label><label class="auth-check optional"><input type="checkbox"><span>Subscribe to our newsletter</span></label><button class="auth-primary" type="submit">Create Account <span>→</span></button></form><div class="auth-divider"><span>or sign up with</span></div><button class="social-btn" type="button" data-social="Google"><b class="google-mark">G</b> Continue with Google</button><p class="auth-switch-copy">Already have an account? <button type="button" class="text-link" data-mode="login">Login here</button></p></div>
+        <div id="auth-forgot" class="auth-form-view" data-view="forgot"><div class="auth-heading"><span class="auth-kicker">Account recovery</span><h2>Forgot your password?</h2><p>Enter your email and we'll help you get back into your account.</p></div><form id="forgot-form" novalidate><label for="forgot-email">Email Address<div class="auth-input"><span>⌕</span><input id="forgot-email" type="email" placeholder="Enter your email address"><small></small></div></label><button class="auth-primary" type="submit">Send Reset Link <span>→</span></button></form><div id="forgot-success" class="auth-success is-hidden"><strong>✓</strong><h3>Reset Link Sent</h3><p>Check your email for instructions to reset your password.</p></div><button type="button" class="text-link auth-back-login" data-mode="login">← Back to Login</button></div>
+        <div id="auth-success" class="auth-success auth-form-view" data-view="success"><strong>✓</strong><h2>Welcome to Brew &amp; Bean!</h2><p id="auth-success-message">Your coffee journey starts here.</p><a class="auth-primary success-link" href="index.html">Continue to website <span>→</span></a></div>
+      </div>
+      <div class="auth-trust-row"><div><b>♢</b><span><strong>Secure &amp; Private</strong><small>Your information is 100% protected.</small></span></div><div><b>♧</b><span><strong>Premium Experience</strong><small>Enjoy a faster and personalized experience.</small></span></div><div><b>◇</b><span><strong>Exclusive Offers</strong><small>Get access to members-only deals.</small></span></div><div><b>♧</b><span><strong>24/7 Support</strong><small>We're here to help you anytime.</small></span></div></div>
+    </section>
+  </main>
+  <div id="auth-toast" class="auth-toast" aria-live="polite"></div>
+  <script src="auth.js"></script>
+</body>
+</html>
